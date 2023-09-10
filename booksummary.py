@@ -46,7 +46,7 @@ class BookSummary:
             )
 
         summary_chain = load_summarize_chain(
-            llm=OpenAI(temperature=args.temp),
+            llm=OpenAI(temperature=args.temp, model=args.GPT_MODEL),
             chain_type='map_reduce',
             map_prompt=map_prompt_template,
             combine_prompt=combine_prompt_template,
