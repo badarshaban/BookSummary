@@ -1,0 +1,2 @@
+Your job is to create a clear and brief summary of the given text. The summary should convey meaningful information.
+Text:`{text}`
