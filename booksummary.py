@@ -65,7 +65,7 @@ class BookSummary:
         text[-1] = text1
         output_file_path = "/".join(text)
 
-        # Create PDF
+# Create PDF
         class PDF(FPDF):
             def header(self):
                 self.set_font('Arial', 'B', 12)
@@ -78,6 +78,10 @@ class BookSummary:
 
             def chapter_body(self, body):
                 self.set_font('Arial', '', 12)
+                
+                # Use utf-8 encoding to handle special characters
+                body = body.encode('latin-1', 'replace').decode('latin-1')
+                
                 self.multi_cell(0, 10, body)
                 self.ln()
 
@@ -114,6 +118,6 @@ if __name__ == "__main__":
     book_summary = BookSummary()
     document =  "crime-and-punishment.pdf" # Enter your book path here!
     response = book_summary.callBookSummary(document)
-    print("Summary!")
+    print("Summary")
     print(response)
     print()

@@ -1,10 +1,10 @@
-Generate a summary adhering to the following format:
+Generate a summary with the following guidelines:
 
-1. Begin with a concise title that reflects the primary subject.
-2. Follow the title with an introductory paragraph providing an overview of the subject.
-3. Present key points using bullet points to outline the content.
-4. Conclude the summary with a summarizing paragraph that recaps the main ideas.
+- Start with a clear title representing the main subject.
+- Provide an introductory paragraph to give an overview.
+- Use bullet points for key points.
+- End with a summary paragraph recapping the main ideas.
 
-Please ensure that the response remains concise, adhering to a maximum length of 20 pages. Your final response should adhere to the specified format.
+Keep the response concise, with a maximum length of 20 pages. Ensure that your response follows the above instructions.
 
 Text:`{text}`
